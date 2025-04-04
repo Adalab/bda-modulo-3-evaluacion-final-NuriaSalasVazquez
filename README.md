@@ -101,12 +101,12 @@ plt.title("Salario Promedio por Nivel Educativo")
 plt.xlabel("Education")
 plt.ylabel("Salary")
 
-
+git add
 ### 5️⃣ ¿Cuál es la proporción de clientes según el tipo de tarjeta de fidelidad?
 
 🥇  
 *Gráfico de pastel o barras*  
-![Tipo de tarjeta](Archivos/grafica_relacion_card_CLV.png)
+![Tipo de tarjeta](Archivos/grafica_card.png)
 
 ---
 
@@ -114,7 +114,7 @@ plt.ylabel("Salary")
 
 👥  
 *Gráfico de barras agrupadas o heatmap*  
-![Estado civil y género](Archivos/grafica_estado_civil_genero.png)
+![Estado civil y género](Archivos/grafica_estadocivil.png)
 
 ---
 
