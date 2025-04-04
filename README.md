@@ -2,7 +2,7 @@
 
 **Evaluación Final | DA Módulo 3**
 
-Este proyecto analiza el comportamiento de los clientes dentro de un programa de lealtad de una aerolínea. A través de la exploración y visualización de datos, se identifican patrones clave sobre reservas, uso de puntos, y características demográficas de los clientes.
+Este proyecto analiza el comportamiento de los clientes dentro de un programa de lealtad de una aerolínea. A través de la exploración y visualización de datos, se identifican patrones clave sobre reservas, uso de puntos y características demográficas de los clientes.
 
 ---
 
@@ -42,32 +42,42 @@ Se usaron funciones de Pandas para:
 
 ## 📊 Fase 2: Visualización de Datos
 
-Visualizaciones generadas para responder preguntas clave. Las gráficas están disponibles en la carpeta `/graficas`.
+Visualizaciones generadas para responder preguntas clave. Las gráficas están disponibles en la carpeta `/Archivos`.
 
-### 1️⃣ ¿Cómo se distribuye la cantidad de vuelos reservados por mes durante el año?
+### 📈 ¿Cómo se distribuye la cantidad de vuelos reservados por mes durante el año?
 
-📈  
 *Gráfico de barras*  
-![Distribución mensual de vuelos](Archivos/grafica_distribucion_reservas_mes.png)
-
+![Distribución mensual de vuelos](./Archivos/grafica_distribucion_reservas_mes.png)
 
 ---
 
 ### 2️⃣ ¿Existe relación entre la distancia de los vuelos y los puntos acumulados?
 
-📉  
 *Gráfico de dispersión con línea de regresión*  
-![Distancia vs Puntos](Archivos/grafica_linea_regresion.png)
+![Distancia vs Puntos](./Archivos/grafica_linea_regresion.png)
 
 ---
 
-### 3️⃣ ¿Cuál es la distribución de los clientes por provincia o estado?
-*Ejemplo de código utilizado para la gráfica, en este caso tipo "pie"*
-📍  
+### 3️⃣ ¿Cuál es la proporción de clientes según el tipo de tarjeta de fidelidad?
+
+*Gráfico de pastel o barras*  
+![Tipo de tarjeta](./Archivos/grafica_card.png)
+
+---
+
+### 4️⃣ ¿Cómo se distribuyen los clientes según estado civil y género?
+
+*Gráfico de barras agrupadas o heatmap*  
+![Estado civil y género](./Archivos/grafica_estadocivil.png)
+
+---
+
+### 5️⃣ ¿Cuál es la distribución de los clientes por provincia o estado?
+
+*Ejemplo de código utilizado para la gráfica tipo pie:*
+
 ```python
-
 df_no_duplicates = df_union.drop_duplicates(subset=['Loyalty Number'])
-
 
 df_no_duplicates['Province'].value_counts().plot.pie(
     autopct='%1.1f%%', 
@@ -76,45 +86,27 @@ df_no_duplicates['Province'].value_counts().plot.pie(
     labeldistance=1.3       
 )
 
-# Título y formato
 plt.title("Distribución de clientes por Provincias")
-plt.ylabel("")  
+plt.ylabel("")
 
 
 
+---
 
 
-### 4️⃣ ¿Cómo se compara el salario promedio entre los diferentes niveles educativos?
+### 6️⃣ ¿Cómo se compara el salario promedio entre los diferentes niveles educativos?
 
-📊  
-*Ejemplo de código utilizado para la gráfica, en este caso Barplot* 
+*Gráfico tipo Barplot:*
+
 ```python
 sns.barplot(x='Education', y='Salary', data=salario_promedio_educacion, palette='viridis')
 
 plt.title("Salario Promedio por Nivel Educativo")
 plt.xlabel("Education")
 plt.ylabel("Salary")
-
-
-sns.barplot(x='Education', y='Salary', data=salario_promedio_educacion, palette='viridis')
-
-plt.title("Salario Promedio por Nivel Educativo")
-plt.xlabel("Education")
-plt.ylabel("Salary")
-
-
-## 5️⃣ ¿Cuál es la proporción de clientes según el tipo de tarjeta de fidelidad?
-
-🥇  
-*Gráfico de pastel o barras*  
-
-![Tipo de tarjeta](./Archivos/grafica_card.png)
+```
 
 ---
-
-
-
-
 
 ## 📌 Conclusiones Clave
 
@@ -123,11 +115,10 @@ plt.ylabel("Salary")
 - Las tarjetas “Aurora” y “Nova” concentran a los clientes de mayor CLV.
 - El nivel educativo se relaciona con un mayor salario promedio.
 
-
+---
 
 ## 📁 Estructura del Proyecto
 
 - `EDA.ipynb` – Notebook con todo el análisis.
 - `Archivos` – Carpeta con visualizaciones generadas y los datasets originales.
 - `README.md` – Este documento.
-
