@@ -61,23 +61,23 @@ Visualizaciones generadas para responder preguntas clave. Las gráficas están d
 ---
 
 ### 3️⃣ ¿Cuál es la distribución de los clientes por provincia o estado?
-
+*Ejemplo de código utilizado para la gráfica, en este caso tipo "pie"*
 📍  
 ```python
-# Eliminar duplicados por cliente
+
 df_no_duplicates = df_union.drop_duplicates(subset=['Loyalty Number'])
 
-# Gráfico de pastel de Provincias
+
 df_no_duplicates['Province'].value_counts().plot.pie(
     autopct='%1.1f%%', 
     colors=['mediumpurple', 'darkcyan', 'greenyellow'], 
-    figsize=(9, 9),         # Ajustar el tamaño del gráfico
-    labeldistance=1.3       # Separar las etiquetas de las porciones
+    figsize=(9, 9),         
+    labeldistance=1.3       
 )
 
 # Título y formato
 plt.title("Distribución de clientes por Provincias")
-plt.ylabel("")  # Eliminar etiqueta del eje Y
+plt.ylabel("")  
 
 
 
@@ -86,16 +86,27 @@ plt.ylabel("")  # Eliminar etiqueta del eje Y
 ### 4️⃣ ¿Cómo se compara el salario promedio entre los diferentes niveles educativos?
 
 📊  
-*Boxplot o barras por nivel educativo*  
-![Salario por educación](graficas/salario_educacion.png)
+*Ejemplo de código utilizado para la gráfica, en este caso Barplot* 
+```python
+sns.barplot(x='Education', y='Salary', data=salario_promedio_educacion, palette='viridis')
 
----
+plt.title("Salario Promedio por Nivel Educativo")
+plt.xlabel("Education")
+plt.ylabel("Salary")
+
+
+sns.barplot(x='Education', y='Salary', data=salario_promedio_educacion, palette='viridis')
+
+plt.title("Salario Promedio por Nivel Educativo")
+plt.xlabel("Education")
+plt.ylabel("Salary")
+
 
 ### 5️⃣ ¿Cuál es la proporción de clientes según el tipo de tarjeta de fidelidad?
 
 🥇  
 *Gráfico de pastel o barras*  
-![Tipo de tarjeta](Archivos/grafica_relacion_card_CLV.png)
+![Tipo de tarjeta](Archivos/grafica_relacion_card_CLV/.png)
 
 ---
 
@@ -103,7 +114,7 @@ plt.ylabel("")  # Eliminar etiqueta del eje Y
 
 👥  
 *Gráfico de barras agrupadas o heatmap*  
-![Estado civil y género](graficas/estado_civil_genero.png)
+![Estado civil y género](Archivos/estado_civil_genero.png)
 
 ---
 
