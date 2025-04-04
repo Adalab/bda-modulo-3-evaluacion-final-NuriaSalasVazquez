@@ -48,7 +48,7 @@ Visualizaciones generadas para responder preguntas clave. Las gráficas están d
 
 📈  
 *Gráfico de barras*  
-![Distribución mensual de vuelos](Archivos/grafica_distribucion_reserva_mes.png)
+![Distribución mensual de vuelos](Archivos/grafica_distribucion_reservas_mes.png)
 
 ---
 
@@ -106,7 +106,7 @@ plt.ylabel("Salary")
 
 🥇  
 *Gráfico de pastel o barras*  
-![Tipo de tarjeta](Archivos/grafica_relacion_card_CLV/.png)
+![Tipo de tarjeta](Archivos/grafica_relacion_card_CLV.png)
 
 ---
 
@@ -114,7 +114,7 @@ plt.ylabel("Salary")
 
 👥  
 *Gráfico de barras agrupadas o heatmap*  
-![Estado civil y género](Archivos/estado_civil_genero.png)
+![Estado civil y género](Archivos/grafica_estado_civil_genero.png)
 
 ---
 
