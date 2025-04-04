@@ -50,6 +50,7 @@ Visualizaciones generadas para responder preguntas clave. Las gráficas están d
 *Gráfico de barras*  
 ![Distribución mensual de vuelos](Archivos/grafica_distribucion_reservas_mes.png)
 
+
 ---
 
 ### 2️⃣ ¿Existe relación entre la distancia de los vuelos y los puntos acumulados?
@@ -101,22 +102,19 @@ plt.title("Salario Promedio por Nivel Educativo")
 plt.xlabel("Education")
 plt.ylabel("Salary")
 
-git add
-### 5️⃣ ¿Cuál es la proporción de clientes según el tipo de tarjeta de fidelidad?
+
+## 5️⃣ ¿Cuál es la proporción de clientes según el tipo de tarjeta de fidelidad?
 
 🥇  
 *Gráfico de pastel o barras*  
-![Tipo de tarjeta](Archivos/grafica_card.png)
+
+![Tipo de tarjeta](./Archivos/grafica_card.png)
 
 ---
 
-### 6️⃣ ¿Cómo se distribuyen los clientes según estado civil y género?
 
-👥  
-*Gráfico de barras agrupadas o heatmap*  
-![Estado civil y género](Archivos/grafica_estadocivil.png)
 
----
+
 
 ## 📌 Conclusiones Clave
 
@@ -132,3 +130,4 @@ git add
 - `EDA.ipynb` – Notebook con todo el análisis.
 - `Archivos` – Carpeta con visualizaciones generadas y los datasets originales.
 - `README.md` – Este documento.
+
