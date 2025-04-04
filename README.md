@@ -48,7 +48,7 @@ Visualizaciones generadas para responder preguntas clave. Las gráficas están d
 
 📈  
 *Gráfico de barras*  
-![Distribución mensual de vuelos](archivos/grafica_distribucion_reserva_mes.png)
+![Distribución mensual de vuelos](Archivos/grafica_distribucion_reserva_mes.png)
 
 ---
 
@@ -56,7 +56,7 @@ Visualizaciones generadas para responder preguntas clave. Las gráficas están d
 
 📉  
 *Gráfico de dispersión con línea de regresión*  
-![Distancia vs Puntos](archivos/grafica_linea_regresion.png)
+![Distancia vs Puntos](Archivos/grafica_linea_regresion.png)
 
 ---
 
@@ -78,7 +78,7 @@ df_no_duplicates['Province'].value_counts().plot.pie(
 # Título y formato
 plt.title("Distribución de clientes por Provincias")
 plt.ylabel("")  # Eliminar etiqueta del eje Y
-plt.show()
+
 
 
 
@@ -95,7 +95,7 @@ plt.show()
 
 🥇  
 *Gráfico de pastel o barras*  
-![Tipo de tarjeta](archivos/grafica_relacion_card_CLV.png)
+![Tipo de tarjeta](Archivos/grafica_relacion_card_CLV.png)
 
 ---
 
